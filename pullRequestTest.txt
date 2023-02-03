@@ -1,1 +1,46 @@
 teste
+
+#### Seu Primeiro Review
+Pronta pro seu primeiro code review, Deh? 
+
+Como pode ver, eu criei uma branch nova para subir a minha alteração, isso é necessário para podermos fazer um pull request. 
+
+Sobre Branch
+A branch é uma ramificação do nosso projeto. Geralmente temos uma branch Main (ou master), onde fica a nossa aplicação de fato (a versão que 
+subimos para deploy e que o usuário terá acesso). e uma develop/staging, que é o ambiente de homologação e testes.
+Os desenvolvedores criam novas branchs para resolver bugs, criar novas features, etc...
+
+Ok, mas não é mais fácil jogar os códigos direto na Main ou na staging???
+Não. A prática de usar várias branchs facilita o processo de code review (pra que ninguem suba uma alteração zoada direto pra deploy, por exemplo).
+E evita conflitos (até certo ponto). Imagine 20 pessoas mexendo no mesmo código, ao mesmo tempo, usando a 
+mesma branch? CAOS TOTAL!
+
+Exercício 1:
+- crie uma nova branch a partir da Main com o nome task-2-meu-primeiro-pr
+- faça qualquer alteração no README.md
+- commite a alteração
+
+Você criou sua branch, fez o commit, e agora pode se perguntar "Como eu faço pra subir a minha alteração pra Main?"
+É aí que entra o Pull Request.
+
+O Pull Request é um pedido de merge. Você vai pedir permissão pra jogar o conteúdo da sua branch em uma outra (por enquanto vamos usar sempre a main).
+Então vai ter a origem (sua branch) e o destino (main).
+
+Para aceitar um Pull Request é preciso que algum contribuidor do projeto Aceite. Esta etapa é a etapa de code review. 
+
+Exercício 2:
+- de um git push para mandar sua nova branch local para o github
+- verifique se ao final do push vai aparecer um Link de Pull Request no seu console.
+    Se aparecer o link, siga os passos:
+    - O link vai te levar a uma pagina do github onde você vai poder ver as alterações que fez no código.
+    - Procure onde está a representado visualmente a branch Origem e a branch Destino (geralmente fica tipo: *Main <- sua-branch)
+    - Procure o botão para abrir o pull request
+
+    Se não aparecer o link, siga os passos:
+    - entre no seu projeto do github e depois entre na sua branch
+    - vai aparecer uma tarja azul no canto superior da tela, algo sobre Pull Request. Clique ali para ver uma tela
+    - Procure onde está a representado visualmente a branch Origem e a branch Destino (geralmente fica tipo: *Main <- sua-branch)
+    - Procure o botão para abrir o pull request
+
+Pronto! Você abriu um Pull Request! :)
+    
